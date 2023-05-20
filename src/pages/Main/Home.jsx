@@ -10,7 +10,7 @@ function Home() {
   return (
     <main>
       {/* --------- hero Section --------- */}
-      <section className="hero-section">
+      <section id="hero" className="hero-section">
         <div className="container grid grid-cols-1 gap-14 px-10 pb-28 pt-10 lg:grid-cols-2 lg:gap-[100px] xl:gap-[150px]">
           {/* hero desc */}
           <div className="col-span-1 pb-5 sm:pb-10 lg:pb-[100px]">
@@ -19,7 +19,7 @@ function Home() {
               public beta now <span className="text-productPrimary">open</span>
             </div>
             {/* h1 */}
-            <h1 className="mb-14 text-6xl font-bold text-secondary">
+            <h1 className="mb-14 text-5xl font-bold text-secondary sm:text-6xl">
               Meet an <span className="text-primary">ultra</span> fast & easy
               proxy service
             </h1>
@@ -64,9 +64,9 @@ function Home() {
       </section>
 
       {/* --------- Product Section --------- */}
-      <section className="bg-[#F3F3F3]">
+      <section id="products" className="bg-[#F3F3F3]">
         <div className="container px-10 py-20">
-          <h2 className="mb-14 text-center text-5xl font-bold capitalize text-secondary">
+          <h2 className="mb-14 text-center text-4xl font-bold capitalize text-secondary sm:text-5xl">
             our products
           </h2>
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
@@ -88,16 +88,16 @@ function Home() {
       </section>
 
       {/* --------- compare Section --------- */}
-      <section className="bg-[#FCFCFC]">
+      <section id="compare" className="bg-[#FCFCFC]">
         <div className="container px-10 py-20">
-          <h2 className="mb-6 text-5xl font-bold capitalize text-secondary">
+          <h2 className="mb-6 text-center text-4xl font-bold capitalize text-secondary sm:text-left sm:text-5xl">
             how we compare
           </h2>
-          <p className="mb-14 max-w-md font-medium leading-8 text-gray-500">
+          <p className="mb-14 max-w-md text-center font-medium leading-8 text-gray-500 sm:text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, a?
           </p>
 
-          <div className="compare flex overflow-x-auto md:grid md:grid-cols-12">
+          <div className="compare flex overflow-x-auto md:grid md:grid-cols-12 xl:ml-20">
             {/* 1st column */}
             <div className="col-span-4">
               <div className="py-10 text-center text-3xl font-semibold capitalize text-transparent">
@@ -255,9 +255,9 @@ function Home() {
       </section>
 
       {/* --------- pricing Section --------- */}
-      <section className="bg-[#FCFCFC]">
+      <section id="plans" className="bg-[#FCFCFC]">
         <div className="container px-10 py-20">
-          <h2 className="mb-6 text-center text-5xl font-bold capitalize text-secondary drop-shadow-[0_6px_3px_rgba(0,0,0,0.30)]">
+          <h2 className="mb-6 text-center text-4xl font-bold capitalize text-secondary drop-shadow-[0_6px_3px_rgba(0,0,0,0.30)] sm:text-5xl">
             simple and <span className="text-primary">transparent</span> pricing
           </h2>
           <p className="mx-auto mb-14 max-w-md text-center font-medium leading-8 text-gray-500">
@@ -285,12 +285,12 @@ function Home() {
       </section>
 
       {/* --------- faq Section --------- */}
-      <section className="bg-[#F3F3F3]">
+      <section id="faq" className="bg-[#F3F3F3]">
         <div className="container px-10 py-20">
-          <h2 className="mb-6 text-5xl font-bold capitalize text-secondary">
+          <h2 className="mb-6 text-center text-4xl font-bold capitalize text-secondary sm:text-left sm:text-5xl">
             frequently asked questions
           </h2>
-          <p className="mb-14 max-w-md font-medium leading-8 text-gray-500">
+          <p className="mb-14 max-w-md text-center font-medium leading-8 text-gray-500 sm:text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, a?
           </p>
 
