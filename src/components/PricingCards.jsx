@@ -6,6 +6,7 @@ import Button from "./Button";
 function PricingCards({ icon, title, popular }) {
   return (
     <div className="relative p-10 max-w-lg rounded-lg shadow-xl">
+      {/* popular */}
       {popular && (
         <div className="absolute -top-8 -right-10 bg-primary text-white leading-0 rounded-full w-fit flex flex-col items-center justify-center py-5 px-4">
           <span>Most</span> <span>Popular</span>
@@ -26,6 +27,7 @@ function PricingCards({ icon, title, popular }) {
           {title}
         </h3>
       </div>
+      {/* services list */}
       <div className="flex flex-col items-center justify-center gap-2">
         <p className="text-gray-500 capitalize text-center">starting from</p>
         <span className="text-secondary text-4xl font-semibold text-center">
@@ -50,6 +52,7 @@ function PricingCards({ icon, title, popular }) {
           <span className="text-gray-400 font-medium">24/7 Support</span>
         </div>
       </div>
+      {/* button */}
       <div className="mt-7 mx-auto w-fit">
         <Button text={"purchase now"} color={"primary"} py={"5"} />
       </div>

@@ -18,3 +18,18 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* accordion in faq section */
+.accordion-desc {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms;
+}
+
+.accordion-desc > p {
+  overflow: hidden;
+}
+
+.open {
+  grid-template-rows: 1fr;
+}
