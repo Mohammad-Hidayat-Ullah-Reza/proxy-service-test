@@ -6,20 +6,20 @@ function ProductCard({ icon, title, discountPrice }) {
   return (
     <div className="relative p-10 space-y-6 max-w-lg rounded-lg shadow-lg">
       {discountPrice && (
-        <div className="absolute -top-8 -right-8 bg-primary text-white leading-0 rounded-full w-fit flex flex-col items-center justify-center py-2 px-4">
+        <div className="absolute -top-8 -right-8 bg-productPrimary text-white leading-0 rounded-full w-fit flex flex-col items-center justify-center py-2 px-4">
           <span>{discountPrice}%</span> <span>Off</span>
         </div>
       )}
       {/* card title and icon */}
       <div className="flex items-center justify-start gap-5 ">
         {icon === "bolt" && (
-          <HiLightningBolt className="text-7xl text-primary" />
+          <HiLightningBolt className="text-7xl text-productPrimary" />
         )}
         {icon === "database" && (
-          <HiOutlineDatabase className="text-7xl text-primary" />
+          <HiOutlineDatabase className="text-7xl text-productPrimary" />
         )}
         {icon === "house" && (
-          <BsFillHouseDoorFill className="text-7xl text-primary" />
+          <BsFillHouseDoorFill className="text-7xl text-productPrimary" />
         )}
         <h3 className="text-2xl font-semibold text-secondary capitalize">
           {title}

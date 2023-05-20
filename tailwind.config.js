@@ -7,7 +7,8 @@ export default {
         center: true,
       },
       colors: {
-        primary: "#7AC58D",
+        primary: "#6FB656",
+        productPrimary: "#7AC58D",
         secondary: "#181A28",
       },
     },

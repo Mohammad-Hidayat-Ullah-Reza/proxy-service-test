@@ -1,8 +1,10 @@
 import React from "react";
 
-function Button({ text }) {
+function Button({ text, color, py }) {
   return (
-    <button className="bg-primary py-2 px-10 rounded-md text-white capitalize  hover:opacity-90">
+    <button
+      className={`bg-${color} py-${py} px-10 rounded-md text-white capitalize hover:opacity-90`}
+    >
       {text}
     </button>
   );
