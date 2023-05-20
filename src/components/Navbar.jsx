@@ -68,7 +68,7 @@ function Navbar() {
           {/* log in, sign up and log out button */}
           <div className="flex items-center">
             <button
-              className={`hidden sm:block border-2 border-transparent hover:border-productPrimary xl:text-xl py-4 px-5 xl:px-100 rounded-md text-gray-600 hover:text-secondary font-medium capitalize mr-4`}
+              className={`hidden sm:block border-2 border-transparent hover:border-productPrimary xl:text-xl py-4 px-5 xl:px-10 rounded-md text-gray-600 hover:text-secondary font-medium capitalize mr-4`}
             >
               log in
             </button>

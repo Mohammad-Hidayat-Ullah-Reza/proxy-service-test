@@ -19,6 +19,62 @@ body {
   padding: 0;
 }
 
+/* -------- hero section -------- */
+.hero-section {
+  background-image: url("assets/map-bg.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-blend-mode: color;
+}
+
+.open-beta-custom-border {
+  background: radial-gradient(
+        circle at 100% 100%,
+        #fdfdfd 0,
+        #fdfdfd 9px,
+        transparent 9px
+      )
+      0% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 0 100%, #fdfdfd 0, #fdfdfd 9px, transparent 9px)
+      100% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 100% 0, #fdfdfd 0, #fdfdfd 9px, transparent 9px)
+      0% 100%/10px 10px no-repeat,
+    radial-gradient(circle at 0 0, #fdfdfd 0, #fdfdfd 9px, transparent 9px) 100%
+      100%/10px 10px no-repeat,
+    linear-gradient(#fdfdfd, #fdfdfd) 50% 50% / calc(100% - 2px)
+      calc(100% - 20px) no-repeat,
+    linear-gradient(#fdfdfd, #fdfdfd) 50% 50% / calc(100% - 20px)
+      calc(100% - 2px) no-repeat,
+    linear-gradient(270deg, #fdfdfd 0%, #b8e4fc 100%);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.input-custom-border {
+  background: radial-gradient(
+        circle at 100% 100%,
+        #f2f2f2 0,
+        #f2f2f2 12px,
+        transparent 12px
+      )
+      0% 0%/13px 13px no-repeat,
+    radial-gradient(circle at 0 100%, #f2f2f2 0, #f2f2f2 12px, transparent 12px)
+      100% 0%/13px 13px no-repeat,
+    radial-gradient(circle at 100% 0, #f2f2f2 0, #f2f2f2 12px, transparent 12px)
+      0% 100%/13px 13px no-repeat,
+    radial-gradient(circle at 0 0, #f2f2f2 0, #f2f2f2 12px, transparent 12px)
+      100% 100%/13px 13px no-repeat,
+    linear-gradient(#f2f2f2, #f2f2f2) 50% 50% / calc(100% - 2px)
+      calc(100% - 26px) no-repeat,
+    linear-gradient(#f2f2f2, #f2f2f2) 50% 50% / calc(100% - 26px)
+      calc(100% - 2px) no-repeat,
+    linear-gradient(90deg, #f2f2f2 0%, #b8e4fc 100%);
+  border-radius: 13px;
+  box-sizing: border-box;
+}
+
+/* -------- compare section -------- */
 /* Firefox */
 .compare {
   scrollbar-width: thin;
@@ -55,7 +111,7 @@ body {
   background-color: #62a34b;
 }
 
-/* accordion in faq section */
+/* -------- accordion in faq section -------- */
 .accordion-desc {
   display: grid;
   grid-template-rows: 0fr;
