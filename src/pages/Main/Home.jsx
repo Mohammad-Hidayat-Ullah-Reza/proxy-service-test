@@ -5,6 +5,7 @@ import PricingCards from "../../components/PricingCards";
 import Accordion from "../../components/Accordion";
 import { BsCheckLg } from "react-icons/bs";
 import { AiOutlineSearch } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -34,11 +35,12 @@ function Home() {
               >
                 explore now
               </button>
-              <button
+              <Link
+                to={"/login"}
                 className={`ml-4 rounded-md border-2 border-transparent px-6 py-4 font-medium capitalize text-gray-600 hover:border-productPrimary hover:text-secondary sm:px-14 xl:text-xl`}
               >
-                log in
-              </button>
+                Log In
+              </Link>
             </div>
           </div>
           {/* images */}

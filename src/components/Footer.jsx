@@ -30,16 +30,25 @@ function Footer() {
         {/* Menu */}
         <div className="col-span-6 flex flex-col items-start gap-3 capitalize md:col-span-3 lg:col-span-2">
           <div className="text-xl font-semibold">Menu</div>
-          <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
+          <a
+            href="#products"
+            className="text-sm text-gray-500 hover:text-gray-700"
+          >
             our products
           </a>
-          <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
+          <a
+            href="#compare"
+            className="text-sm text-gray-500 hover:text-gray-700"
+          >
             How we compare
           </a>
-          <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
+          <a
+            href="#plans"
+            className="text-sm text-gray-500 hover:text-gray-700"
+          >
             pricing plans
           </a>
-          <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
+          <a href="#faq" className="text-sm text-gray-500 hover:text-gray-700">
             FAQ
           </a>
         </div>

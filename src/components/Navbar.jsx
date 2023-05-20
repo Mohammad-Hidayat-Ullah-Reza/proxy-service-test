@@ -3,6 +3,7 @@ import Button from "./Button";
 import { HiMenu } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import { AiOutlineClockCircle } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -80,29 +81,33 @@ function Navbar() {
             >
               FAQ
             </a>
-            <button
+            <Link
+              to={"/signup"}
               className={`mx-auto w-full rounded-md bg-productPrimary p-4 text-sm capitalize text-white hover:opacity-90`}
             >
               sign up
-            </button>
-            <button
+            </Link>
+            <Link
+              to={"/login"}
               className={`rounded-md border-2 border-transparent px-5 py-4 font-medium capitalize text-gray-600 hover:border-productPrimary hover:text-secondary`}
             >
               log in
-            </button>
+            </Link>
           </div>
           {/* log in, sign up and log out button */}
           <div className="flex items-center">
-            <button
+            <Link
+              to={"/login"}
               className={`mr-4 hidden rounded-md border-2 border-transparent px-5 py-4 font-medium capitalize text-gray-600 hover:border-productPrimary hover:text-secondary sm:block xl:px-10 xl:text-xl`}
             >
               log in
-            </button>
-            <button
+            </Link>
+            <Link
+              to={"/signup"}
               className={`hidden rounded-md bg-productPrimary px-5 py-4 capitalize text-white hover:opacity-90 sm:block xl:px-10 xl:text-xl`}
             >
               sign up
-            </button>
+            </Link>
             {/* hamburger menu */}
             <HiMenu
               className="ml-4 text-4xl text-secondary lg:hidden"
