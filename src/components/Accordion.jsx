@@ -3,7 +3,6 @@ import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 function Accordion({ title, desc }) {
   const [open, setOpen] = useState(false);
-  console.log(open);
 
   return (
     <div>
