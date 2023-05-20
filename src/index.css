@@ -19,6 +19,42 @@ body {
   padding: 0;
 }
 
+/* Firefox */
+.compare {
+  scrollbar-width: thin;
+  scrollbar-color: #6fb656 #dfe9eb;
+}
+
+/* Chrome, Edge and Safari */
+.compare::-webkit-scrollbar {
+  width: 5px;
+}
+.compare::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #dfe9eb;
+}
+
+.compare::-webkit-scrollbar-track:hover {
+  background-color: #b8c0c2;
+}
+
+.compare::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+
+.compare::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #6fb656;
+}
+
+.compare::-webkit-scrollbar-thumb:hover {
+  background-color: #62a34b;
+}
+
+.compare::-webkit-scrollbar-thumb:active {
+  background-color: #62a34b;
+}
+
 /* accordion in faq section */
 .accordion-desc {
   display: grid;

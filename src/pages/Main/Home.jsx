@@ -3,6 +3,7 @@ import ProductCard from "../../components/ProductCard";
 import Button from "../../components/Button";
 import PricingCards from "../../components/PricingCards";
 import Accordion from "../../components/Accordion";
+import { BsCheckLg } from "react-icons/bs";
 
 function Home() {
   return (
@@ -27,6 +28,173 @@ function Home() {
           </div>
           <div className="mt-10 flex items-center justify-center">
             <Button text={"try it out"} color={"productPrimary"} py={"2"} />
+          </div>
+        </div>
+      </section>
+
+      {/* --------- compare Section --------- */}
+      <section className="bg-[#FCFCFC]">
+        <div className="container px-10 py-20">
+          <h2 className="font-bold text-5xl text-secondary mb-6 capitalize">
+            how we compare
+          </h2>
+          <p className="mb-14 text-gray-500 font-medium leading-8 max-w-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, a?
+          </p>
+
+          <div className="flex md:grid md:grid-cols-12 overflow-x-auto compare">
+            {/* 1st column */}
+            <div className="col-span-4">
+              <div className="text-transparent font-semibold text-3xl py-10 text-center capitalize">
+                Logo
+              </div>
+              <div className="text-secondary whitespace-nowrap font-semibold text-lg p-5 bg-[#EFEFEF] capitalize rounded-tl-lg">
+                Money Back
+              </div>
+              <div className="text-secondary whitespace-nowrap font-semibold text-lg p-5 bg-[#E0E1E5] capitalize">
+                ultra fast service
+              </div>
+              <div className="text-secondary whitespace-nowrap font-semibold text-lg p-5 bg-[#EFEFEF] capitalize">
+                flexible pricing
+              </div>
+              <div className="text-secondary whitespace-nowrap font-semibold text-lg p-5 bg-[#E0E1E5] capitalize">
+                24/7 support team
+              </div>
+              <div className="text-secondary whitespace-nowrap font-semibold text-lg p-5 bg-[#EFEFEF] capitalize">
+                data never expires
+              </div>
+              <div className="text-secondary whitespace-nowrap font-semibold text-lg p-5 bg-[#E0E1E5] capitalize rounded-bl-lg">
+                prices start from
+              </div>
+            </div>
+
+            {/* 2nd column */}
+            <div className="group col-span-2 hover:shadow-xl hover:bg-white/[.8] hover:rounded-xl">
+              <div className="text-secondary font-semibold text-3xl py-10 text-center capitalize">
+                Logo
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#EFEFEF] group-hover:bg-[#EFEFEF]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#E0E1E5] group-hover:bg-[#E0E1E5]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#EFEFEF] group-hover:bg-[#EFEFEF]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#E0E1E5] group-hover:bg-[#E0E1E5]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#EFEFEF] group-hover:bg-[#EFEFEF]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-secondary font-semibold text-lg text-center p-5 bg-[#E0E1E5] capitalize">
+                $1.50/GB
+              </div>
+              <div className="invisible group-hover:visible py-7 px-3 flex items-center justify-center">
+                <button
+                  className={`bg-primary p-4 px-2 text-sm lg:text-base lg:px-4 xl:px-7 rounded-md text-white capitalize hover:opacity-90`}
+                >
+                  order now
+                </button>
+              </div>
+            </div>
+
+            {/* 3rd column */}
+            <div className="group col-span-2 hover:shadow-xl hover:bg-white/[.8] hover:rounded-xl">
+              <div className="text-secondary font-semibold text-3xl py-10 text-center capitalize">
+                Logo
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#EFEFEF] group-hover:bg-[#EFEFEF]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#E0E1E5] group-hover:bg-[#E0E1E5]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#EFEFEF] group-hover:bg-[#EFEFEF]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#E0E1E5] group-hover:bg-[#E0E1E5]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#EFEFEF] group-hover:bg-[#EFEFEF]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-secondary font-semibold text-lg text-center p-5 bg-[#E0E1E5] capitalize">
+                $12/GB
+              </div>
+              <div className="invisible group-hover:visible py-7 px-3 flex items-center justify-center">
+                <button
+                  className={`bg-primary p-4 px-2 text-sm lg:text-base lg:px-4 xl:px-7 rounded-md text-white capitalize hover:opacity-90`}
+                >
+                  order now
+                </button>
+              </div>
+            </div>
+
+            {/* 4th column */}
+            <div className="group col-span-2 hover:shadow-xl hover:bg-white/[.8] hover:rounded-xl">
+              <div className="text-secondary font-semibold text-3xl py-10 text-center capitalize">
+                Logo
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#EFEFEF] group-hover:bg-[#EFEFEF]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#E0E1E5] group-hover:bg-[#E0E1E5]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#EFEFEF] group-hover:bg-[#EFEFEF]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#E0E1E5] group-hover:bg-[#E0E1E5]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#EFEFEF] group-hover:bg-[#EFEFEF]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-secondary font-semibold text-lg text-center p-5 bg-[#E0E1E5] capitalize">
+                $1.50/GB
+              </div>
+              <div className="invisible group-hover:visible py-7 px-3 flex items-center justify-center">
+                <button
+                  className={`bg-primary p-4 px-2 text-sm lg:text-base lg:px-4 xl:px-7 rounded-md text-white capitalize hover:opacity-90`}
+                >
+                  order now
+                </button>
+              </div>
+            </div>
+
+            {/* 5th column */}
+            <div className="group col-span-2 hover:shadow-xl hover:bg-white/[.8] hover:rounded-xl">
+              <div className="text-secondary font-semibold text-3xl py-10 text-center capitalize">
+                Logo
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#EFEFEF] group-hover:bg-[#EFEFEF]/[.8] rounded-tr-lg group-hover:rounded-none">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#E0E1E5] group-hover:bg-[#E0E1E5]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#EFEFEF] group-hover:bg-[#EFEFEF]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#E0E1E5] group-hover:bg-[#E0E1E5]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-primary font-semibold text-[28px] p-5 bg-[#EFEFEF] group-hover:bg-[#EFEFEF]/[.8] ">
+                <BsCheckLg className="mx-auto" />
+              </div>
+              <div className="text-secondary font-semibold text-lg text-center p-5 bg-[#E0E1E5] capitalize rounded-br-lg group-hover:rounded-none">
+                $1.50/GB
+              </div>
+              <div className="invisible group-hover:visible py-7 px-3 flex items-center justify-center">
+                <button
+                  className={`bg-primary p-4 px-2 text-sm lg:text-base lg:px-4 xl:px-7 rounded-md text-white capitalize hover:opacity-90`}
+                >
+                  order now
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
